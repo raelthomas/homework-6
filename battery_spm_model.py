@@ -23,7 +23,7 @@ def cycle(C_rate = None, thermal_flags=None):
             cond = 1 # Heat transfer via thermal conduciton
             conv = 1 # Heat transfer via external convection
             rad = 1 # Heat tranfer via external radiation
-        
+
     time_span = np.array([0,t_final*t_fac])
         
     solution = solve_ivp(lambda t, y: residual(t, y, pars, ptr, thermal_flags), 

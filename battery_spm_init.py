@@ -78,6 +78,7 @@ class pars:
     A_fac_an = r_p_an/3/H_an/eps_graphite
     A_fac_ca = r_p_ca/3/H_ca/eps_LCO
 
+
     # Inverse of mass density times specific heat capacity:
     RhoCpInv_an = 1/rho_avg_an/Cp_avg_an
     RhoCpInv_elyte = 1/density_elyte/Cp_elyte
@@ -96,6 +97,8 @@ class pars:
     R_io_elyte = 1/sigma_io_elyte/eps_elyte_sep
     R_io_ca = 1/sigma_io_elyte/(1-eps_LCO)
     R_el_ca = 1/sigma_el_LCO/eps_LCO
+
+
 
     # Emmissivity:
     emmissivity = emmissivity
